@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tblood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e63946; /* Red background matching the image */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+        
+        .notice-container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .notice-label {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .notice-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        .notice-message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .tblood-button {
+            background-color: #ffd60a; /* Yellow button */
+            color: #000000; /* Black text */
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .tblood-button:hover {
+            background-color: #ffc300;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tblood-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .notice-title {
+                font-size: 2rem;
+            }
+            
+            .notice-label {
+                font-size: 1.5rem;
+            }
+            
+            .notice-message {
+                font-size: 1.1rem;
+            }
+            
+            .tblood-button {
+                font-size: 1.3rem;
+                padding: 12px 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .notice-title {
+                font-size: 1.8rem;
+            }
+            
+            .notice-label {
+                font-size: 1.3rem;
+            }
+            
+            .notice-message {
+                font-size: 1rem;
+            }
+            
+            .tblood-button {
+                font-size: 1.2rem;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-container">
+        <h1 class="notice-label">Notice:</h1>
+        <h2 class="notice-title">Tblood Services Have Stopped</h2>
+        <p class="notice-message">We would like to inform you that all Tblood services have been discontinued.</p>
+        <button class="tblood-button">Tblood</button>
+        <a href="https://app.tbloods.online/"><button class="tblood-button">APP</button></a>
+    </div>
+
+    <script>
+        document.querySelector('.tblood-button').addEventListener('click', function() {
+
+            // For example: window.location.href = 'https://example.com';
+            alert('Tblood services have been discontinued.');
+        });
+    </script>
+</body>
+</html>
